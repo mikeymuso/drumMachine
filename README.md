@@ -2,13 +2,9 @@
 
 Mike's Drum Machine is an app for creating drum beats online
 
-<br>
-
 ## Description
 
 The app can be used to create drum beats using a variety a samples and a grid layout to select the pattern. It is modelled on drum machines of the past and includes some presets to get you going.
-
-<br>
 
 ## Technologies
 
@@ -16,11 +12,7 @@ The app can be used to create drum beats using a variety a samples and a grid la
 - CSS
 - JavaScript
 
-<br>
-
 # Usage
-
-<br>
 
 ## Presets
 
@@ -30,8 +22,6 @@ To quickly get started choose a **preset** from the menu
 
 This will load a beat into the grid and automatically adjust the tempo/swing parameters to suit the selected style
 
-<br>
-
 ## Playback
 
 Begin playback using the **transport controls**
@@ -40,8 +30,6 @@ Begin playback using the **transport controls**
 
 You can **start/stop** and toggle **loop mode**. Use the 'Swing' menu to change the **swing value**.
 
-<br>
-
 ## Information Window
 
 The information window shows important parameters
@@ -49,8 +37,6 @@ The information window shows important parameters
 ![Information window](images/info-display.png)
 
 The beat counter displays which beat you are on. You can select the number of divisions in the grid (16/32) and change the tempo with the slider.
-
-<br>
 
 ## Grid Controls
 
@@ -62,8 +48,6 @@ The mute & solo controls will allow you to focus on specific tracks and hush the
 
 Use the All option to toggle the whole grid for that track.
 
-<br>
-
 ## Clear & Info
 
 You can clear the whole grid with the **clear** button
@@ -71,8 +55,6 @@ You can clear the whole grid with the **clear** button
 ![Clearing the grid](images/clear-info-controls.png)
 
 Check out more info and future features with the **info** button
-
-<br>
 
 # Future Features
 
