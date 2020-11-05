@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap"
+			rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="#">
+	</head>
+	<body>
+		<div class="top-menu">
+			<div class="container">
+				<div class="transport-control">
+                    <button id="swing-label">Swing</button>
+                    <select id="swing-selector">
+                        <option value="off" selected>Off</option>
+                        <option value="eight">8ths</option>
+                        <option value="sixteen">16ths</option>
+                    </select>
+
+					<button id="playBtn"><i class="fa fa-play" aria-hidden="true"></i></button>
+					<button id="stopBtn"><i class="fa fa-stop" aria-hidden="true"></i></button>
+					<button id="loopBtn" class="active"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+				</div>
+
+				<div class="header-info">
+					<div class="beat-counter">Beat: 00:<span id="beat">00</span></div>
+					<h1 class="top-menu-header"><span>Mike's <br></span>Drum Machine</h1>
+
+					<div class="division-container">
+						<h3>Divisions</h3>
+						<select name="divison-selector" class="division-selector" id="division-selector">
+							<!-- <option value="8">8</option> -->
+							<option value="16" selected>16</option>
+							<!-- <option value="24">24</option> -->
+							<option value="32">32</option>
+							<!-- <option value="36">36</option> -->
+						</select>
+					</div>
+
+					<div class="tempo-container">
+						<div class="tempo-counter">Tempo: <span id="tempo-output">100</span>.00</div>
+						<input id="tempo-slider" type="range" min="60" max="180" value="100"
+						class="tempo-slider">
+					</div>
+				</div>
+				<div class="preset-container">
+					<select name="preset-selector" id="preset-selector" class="preset-selector">
+						<option value="" selected disabled>Presets</option>
+					</select>
+                    <button id="clearAllBtn"><i class="fa fa-trash" aria-hidden="true"></i></i></button>
+                    <button id="infoBtn"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+                    <div id="infoPopover">
+                        <div class="inner-popover">
+                            <p>Created by Mike Cotton</p>
+                            <p>mikeyc87@me.com</p>
+                            <hr>
+                            <p>Source code available at:</p>
+                            <p><a href="https://github.com/mikeymuso/drumMachine.git " target="_blank">Github</a></p>
+                            <hr>
+                            <p>Note: the 8th's swing feature is not active as I'm still working on the logistics of this</p>
+                            <p>Please let me know of any bugs you discover!</p>
+                            <p>Future features
+                                <ul>
+                                    <li>Different drum kits</li>
+                                    <li>Option to save your own beats</li>
+                                    <li>More instruments</li>
+                                </ul>
+                            </p>
+                            <p>Happy drumming!</p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-window">
+			<div class="grid-headers">
+				<h4 class="head1">Instr</h4>
+
+				<h4 class="head3">Volume</h4>
+				<h4 class="head2">All</h4>
+				<div class="divider"></div>
+				<h4 class="head3">Grid</h4>
+			</div>
+			<div class="kickCheckboxes instRow"></div>
+			<div class="snareCheckboxes instRow"></div>
+			<div class="closedHHCheckboxes instRow"></div>
+			<div class="openHHCheckBoxes instRow"></div>
+			<div class="hiTomCheckBoxes instRow"></div>
+			<div class="midTomCheckBoxes instRow"></div>
+			<div class="lowTomCheckBoxes instRow"></div>
+		</div>
+
+        <script src="app.js"></script>
+        <script src="info.js"></script>
+	</body>
+</html>
